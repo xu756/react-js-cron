@@ -50,10 +50,6 @@
     "format:fix": "run-s lint:fix prettier:fix",
     "publish": "pnpm publish --registry=https://xu756-npm.pkg.coding.net/me/custom-package/"
   },
-  "resolutions": {
-    "@ant-design/cssinjs": "1.0.2",
-    "enhanced-resolve": "5.10.0"
-  },
   "peerDependencies": {
     "antd": ">=5.8.0",
     "react": ">=17.0.0",

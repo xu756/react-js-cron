@@ -251,8 +251,6 @@ export default function CustomSelect(props: CustomSelectProps) {
 
   return (
     <Select<string[] | undefined>
-      // Use 'multiple' instead of 'tags‘ mode
-      // cf: Issue #2
       mode={
         mode === 'single' && !periodicityOnDoubleClick ? undefined : 'multiple'
       }
