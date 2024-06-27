@@ -1,0 +1,1 @@
+pnpm publish --registry=https://xu756-npm.pkg.coding.net/me/custom-package/

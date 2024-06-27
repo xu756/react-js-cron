@@ -260,7 +260,7 @@ export interface Locale {
 }
 export type SetValueFunction = (
   value: string,
-  extra: SetValueFunctionExtra
+  extra: SetValueFunctionExtra,
 ) => void
 export interface SetValueFunctionExtra {
   selectedPeriod: PeriodType
