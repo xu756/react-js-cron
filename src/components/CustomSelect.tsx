@@ -60,14 +60,14 @@ export default function CustomSelect(props: CustomSelectProps) {
               unit,
               humanizeLabels,
               leadingZero,
-              clockFormat
+              clockFormat,
             ),
           }
         })
         .filter(filterOption)
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [optionsList, leadingZero, humanizeLabels, clockFormat]
+    [optionsList, leadingZero, humanizeLabels, clockFormat],
   )
   const localeJSON = JSON.stringify(locale)
   const renderTag = useCallback(
@@ -84,7 +84,7 @@ export default function CustomSelect(props: CustomSelectProps) {
         unit,
         humanizeLabels,
         leadingZero,
-        clockFormat
+        clockFormat,
       )
       const testEveryValue = cronValue.match(/^\*\/([0-9]+),?/) || []
 
@@ -99,7 +99,7 @@ export default function CustomSelect(props: CustomSelectProps) {
       )
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [value, localeJSON, humanizeLabels, leadingZero, clockFormat]
+    [value, localeJSON, humanizeLabels, leadingZero, clockFormat],
   )
 
   const simpleClick = useCallback(
@@ -130,7 +130,7 @@ export default function CustomSelect(props: CustomSelectProps) {
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [setValue, value]
+    [setValue, value],
   )
 
   const doubleClick = useCallback(
@@ -163,7 +163,7 @@ export default function CustomSelect(props: CustomSelectProps) {
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [value, options, setValue]
+    [value, options, setValue],
   )
 
   const clicksRef = useRef<Clicks[]>([])
@@ -208,7 +208,7 @@ export default function CustomSelect(props: CustomSelectProps) {
         }
       }
     },
-    [clicksRef, simpleClick, doubleClick, readOnly, periodicityOnDoubleClick]
+    [clicksRef, simpleClick, doubleClick, readOnly, periodicityOnDoubleClick],
   )
 
   // Used by the select clear icon
@@ -225,7 +225,7 @@ export default function CustomSelect(props: CustomSelectProps) {
         'react-js-cron-custom-select': true,
         [`${className}-select`]: !!className,
       }),
-    [className]
+    [className],
   )
 
   const popupClassName = useMemo(
@@ -246,7 +246,7 @@ export default function CustomSelect(props: CustomSelectProps) {
         [`${className}-select-dropdown-${unit.type}`]: !!className,
       }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [className, grid, clockFormat, period]
+    [className, grid, clockFormat, period],
   )
 
   return (

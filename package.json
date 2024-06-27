@@ -50,11 +50,6 @@
     "format:fix": "run-s lint:fix prettier:fix",
     "publish": "pnpm publish --registry=https://xu756-npm.pkg.coding.net/me/custom-package/"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "resolutions": {
     "@ant-design/cssinjs": "1.0.2",
     "enhanced-resolve": "5.10.0"
@@ -90,7 +85,6 @@
     "prettier": "2.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-scripts": "5.0.1",
     "rollup": "3.5.0",
     "rollup-plugin-copy": "3.4.0",
     "rollup-plugin-dts": "5.0.0",
